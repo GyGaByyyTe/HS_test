@@ -1,0 +1,9 @@
+.main {
+  .main__header {
+    @include font_vida_33(36px);
+    color: #414141;
+  }
+  .main__content {
+    padding-top: 2.5rem;
+  }
+}

@@ -1,0 +1,50 @@
+.sidebar {
+  .sidebar__info-item {
+    color: $color_violet;
+    @include font_vida_31(16px);
+    margin-bottom: 2.3rem;
+    &--active {
+      color: #53565a;
+      position: relative;
+      &:before {
+        position: absolute;
+        content: ' ';
+        padding: 1.2rem 0;
+        left: -7%;
+        top: -60%;
+        width: 85%;
+        height: 100%;
+        border-radius: 20px;
+        border: 1px solid rgba(#53565a, 0.2);
+      }
+      .sidebar__info-item-notification {
+        display: inline-block;
+        position: absolute;
+        width: 1rem;
+        height: 1rem;
+        right: 25%;
+        transform: translate(45%, -100%);
+        background-color: $color_violet;
+        border-radius: 50%;
+        color: $color_white;
+        font-size: rem(11px);
+        text-align: center;
+        line-height: 1rem;
+      }
+    }
+  }
+  .sidebar__locations-item {
+    padding: 2.5rem 1.5rem 2.5rem 0;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: ' ';
+      top: 0;
+      width: 90%;
+      border-top: 1px solid rgba(#919191, 0.13);
+    }
+    .sidebar__info-item-notification {
+      display: none;
+    }
+  }
+}

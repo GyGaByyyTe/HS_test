@@ -13,6 +13,12 @@
 
 //Ипортируем Стили отдельных компонентов
 @import "components/header";
+@import "components/content";
+@import "components/sidebar";
+@import "components/news";
+@import "components/main";
+@import "components/notifications";
+@import "components/address";
 @import "components/menu";
 @import "components/hamburger";
 

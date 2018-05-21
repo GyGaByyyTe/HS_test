@@ -1,0 +1,42 @@
+.notifications {
+  .notifications__item {
+    padding: 1.5rem 2rem 0.85rem 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #edeeee;
+    background-color: #ffffff;
+
+    &:first-child {
+      padding-bottom: 2.4rem; //только для перфект пикселя. В макете нецелесообразно большой отступ тут.
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &--active {
+      background-color: #fcfcfc;
+      padding-bottom: 1.7rem;
+      .notifications__item-desc {
+        height: 100%;
+      }
+    }
+  }
+  .notifications__item-date {
+    display: inline-block;
+    padding: 0.1rem 0.2rem;
+    border-radius: 2px;
+    background-color: #edeeee;
+  }
+  .notifications__item-header {
+    @include font_vida_33(18px);
+    margin-top: 1.36rem;
+  }
+  .notifications__item-desc {
+    height: 0;
+    color: #5a5a58;
+    overflow: hidden;
+    margin-top: 0.8rem;
+    line-height: 1.5rem;
+    width: 91%;
+  }
+}

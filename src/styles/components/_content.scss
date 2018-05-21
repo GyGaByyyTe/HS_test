@@ -1,0 +1,46 @@
+.content {
+  position: relative;
+
+  .content__top {
+    padding-left: 1rem;
+    position: absolute;
+    top: 0;
+    transform: translateY(-100%);
+    font-size: 0;
+    color: #414141;
+    .content__top-address {
+      color: #777b80;
+      @include font_vida_33(18px);
+      background-color: $color_white;
+      padding: 0.3rem 1.1rem;
+    }
+    .content__top-object {
+      @include font_vida_33(48px);
+      background-color: $color_white;
+      padding: 0.3rem 1.1rem;
+    }
+  }
+
+  .content__center {
+    display: flex;
+    padding-top: 3.3rem;
+    padding-left: 2.3rem;
+  }
+  .content__side {
+    padding-top: 1rem;
+    flex: 1;
+  }
+  .content__main {
+    position: relative;
+    flex: 2.65;
+    padding-left: 2.5rem;
+    padding-bottom: 4rem;
+    &:before {
+      content: ' ';
+      height: 100%;
+      position: absolute;
+      left: 0;
+      border-left: 1px solid rgba(#919191, 0.1);
+    }
+  }
+}

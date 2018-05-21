@@ -1,0 +1,41 @@
+.address {
+  color: $color_violet;
+  .address__header {
+    @include font_vida_33(24px);
+    margin-bottom: 0.6rem;
+  }
+
+  .address__name {
+    color: black;
+    display: inline-block;
+  }
+  .address__link {
+    @include font_vida_33(14px);
+    position: relative;
+    padding-right: 2rem;
+    display: inline-block;
+    float: right;
+
+    &:before {
+      position: absolute;
+      right: 0;
+      content: ' ';
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 1px solid $color_violet;
+    }
+    &:after {
+      position: absolute;
+      right: 0;
+      content: ' ';
+      width: 7px;
+      height: 7px;
+      transform-origin: 100% 0;
+      transform: rotate(45deg) translate(-130%, 5%);
+      border-width: 1px;
+      border-style: solid;
+      border-color: $color_violet $color_violet transparent transparent;
+    }
+  }
+}
