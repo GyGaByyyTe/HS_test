@@ -20,16 +20,16 @@
       .sidebar__info-item-notification {
         display: inline-block;
         position: absolute;
-        width: 1rem;
-        height: 1rem;
-        right: 25%;
-        transform: translate(45%, -100%);
+        width: 20px;
+        height: 20px;
+        right: 23%;
+        transform: translate(45%, -80%);
         background-color: $color_violet;
         border-radius: 50%;
         color: $color_white;
-        font-size: rem(11px);
+        font-size: rem(13px);
         text-align: center;
-        line-height: 1rem;
+        line-height: rem(20px);
       }
     }
   }

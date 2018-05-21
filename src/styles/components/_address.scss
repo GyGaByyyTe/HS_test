@@ -22,20 +22,23 @@
       content: ' ';
       width: 20px;
       height: 20px;
-      border-radius: 50%;
-      border: 1px solid $color_violet;
+      background-image: url('../images/address_arrow.png');
+      // border-radius: 50%;
+      // border: 1px solid $color_violet;
     }
-    &:after {
-      position: absolute;
-      right: 0;
-      content: ' ';
-      width: 7px;
-      height: 7px;
-      transform-origin: 100% 0;
-      transform: rotate(45deg) translate(-130%, 5%);
-      border-width: 1px;
-      border-style: solid;
-      border-color: $color_violet $color_violet transparent transparent;
-    }
+    // &:after {
+    //   position: absolute;
+    //   right: 0;
+    //   content: ' ';
+    //   width: 7px;
+    //   height: 7px;
+    //   transform-origin: 0 0;
+    //   // transform: rotate(45deg) translate(-150%,-70%);
+    //   transform: rotate(45deg) translate(-11px, -4px);
+    //   -moz-transform: rotate(45deg) translate(-11px, -4px);
+    //   border-width: 1px;
+    //   border-style: solid;
+    //   border-color: $color_violet $color_violet transparent transparent;
+    // }
   }
 }

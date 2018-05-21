@@ -1,0 +1,10 @@
+.dividers {
+  display: flex;
+  .dividers__item {
+    @include font_vida_33(14px);
+    margin-left: 6rem;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}

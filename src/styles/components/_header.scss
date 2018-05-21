@@ -20,6 +20,9 @@
     flex-shrink: 0;
     @include flex-prop;
   }
+  .header__call {
+    display: inline-block;
+  }
   .header__phone {
     color: #565f66;
     margin-right: 0.5rem;

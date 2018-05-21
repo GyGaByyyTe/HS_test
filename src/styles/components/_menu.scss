@@ -29,8 +29,7 @@ $border_gray: 1px solid #d7d7d7;
   .menu__item {
     position: relative;
     padding: 0.3rem 0.7rem;
-    display: flex;
-    align-items: center;
+    display: inline-block;
     color: $color_violet;
     font-size: rem(14px);
 

@@ -1,7 +1,8 @@
 mixin content
     .content
-        img.content__img(src="./assets/images/bg_51.png", alt="object_51")    
-        .container
+        .content__picture
+            img.content__img(src="./assets/images/bg_51.png", alt="object_51")  
+        .container        
             .content__top
                 span.content__top-address Адрес 123
                 .content__top-object Объект №51
@@ -9,25 +10,32 @@ mixin content
                 aside.content__side
                     .sidebar
                         ul.sidebar__info
-                            li.sidebar__info-item Документы
-                            li.sidebar__info-item План
-                            li.sidebar__info-item Оплата
-                            li.sidebar__info-item Стадии
-                            li.sidebar__info-item Online
-                            li.sidebar__info-item Инструкция
-                            li.sidebar__info-item.sidebar__info-item--active Уведомления
+                            li.sidebar__info-item 
+                                a Документы
+                            li.sidebar__info-item
+                                a План
+                            li.sidebar__info-item 
+                                a Оплата
+                            li.sidebar__info-item 
+                                a Стадии
+                            li.sidebar__info-item 
+                                a Online
+                            li.sidebar__info-item 
+                                a Инструкция
+                            li.sidebar__info-item.sidebar__info-item--active 
+                                a Уведомления
                                 span.sidebar__info-item-notification 6                             
                         ul.sidebar__locations
                             li.sidebar__locations-item    
                                 .address.clearfix    
                                     .address__header Адрес 123     
                                     .address__name Адрес 123    
-                                    .address__link Перейти  
+                                    a.address__link Перейти  
                             li.sidebar__locations-item    
                                 .address    
                                     .address__header Адрес 123     
                                     .address__name Адрес 123    
-                                    .address__link Перейти  
+                                    a.address__link Перейти  
                 main.content__main.main
                     h3.main__header Уведомления
                     .main__content
@@ -52,22 +60,23 @@ mixin content
                                 span.notifications__item-date 24/07/17
                                 .notifications__item-header Юрский маховик: ядро или засветка неба?
                                 .notifications__item-desc Юрский маховик: ядро или засветка неба?
-            .content__bot
-                ul.news
-                    li.news__item
-                        span.news__item-date 14/07
-                        span.news__item-header акция
-                        .news__item-desc Гелиоцентрическое расстояние, как принято считать, продольно перечеркивает липарит.
-                    li.news__item
-                        span.news__item-date 14/07
-                        span.news__item-header Новости
-                        .news__item-desc Гелиоцентрическое расстояние, как принято считать, продольно перечеркивает липарит.
-                    li.news__item
-                        span.news__item-date 14/07
-                        span.news__item-header акции
-                        .news__item-desc Гелиоцентрическое расстояние, как принято считать, продольно перечеркивает липарит.
-                    li.news__item
-                        span.news__item-date 14/07
-                        span.news__item-header события
-                        .news__item-desc Гелиоцентрическое расстояние, как принято считать, продольно перечеркивает липарит.
+        .content__bot
+
+            ul.news
+                li.news__item
+                    span.news__item-date 14/07
+                    span.news__item-header.news__item-header--green акция
+                    .news__item-desc Гелиоцентрическое расстояние, как принято считать, продольно перечеркивает липарит.
+                li.news__item
+                    span.news__item-date 14/07
+                    span.news__item-header Новости
+                    .news__item-desc Гелиоцентрическое расстояние, как принято считать, продольно перечеркивает липарит.
+                li.news__item
+                    span.news__item-date 14/07
+                    span.news__item-header акции
+                    .news__item-desc Гелиоцентрическое расстояние, как принято считать, продольно перечеркивает липарит.
+                li.news__item
+                    span.news__item-date 14/07
+                    span.news__item-header события
+                    .news__item-desc Гелиоцентрическое расстояние, как принято считать, продольно перечеркивает липарит.
 

@@ -1,10 +1,15 @@
 .content {
   position: relative;
-
+  .content__picture {
+    text-align: center;
+  }
+  .content__img {
+    position: relative;
+    align-content: center;
+  }
   .content__top {
     padding-left: 1rem;
     position: absolute;
-    top: 0;
     transform: translateY(-100%);
     font-size: 0;
     color: #414141;
@@ -42,5 +47,9 @@
       left: 0;
       border-left: 1px solid rgba(#919191, 0.1);
     }
+  }
+  .content__bot {
+    margin-top: 5rem;
+    background-color: #eee;
   }
 }

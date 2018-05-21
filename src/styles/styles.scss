@@ -13,6 +13,7 @@
 
 //Ипортируем Стили отдельных компонентов
 @import "components/header";
+@import "components/logo";
 @import "components/content";
 @import "components/sidebar";
 @import "components/news";
@@ -21,6 +22,9 @@
 @import "components/address";
 @import "components/menu";
 @import "components/hamburger";
+@import "components/footer";
+@import "components/dividers";
+@import "components/subdividers";
 
 //Ипортируем Персональные стили для страниц
 // @import 'pages/home';

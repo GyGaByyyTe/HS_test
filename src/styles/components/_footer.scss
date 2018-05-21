@@ -1,0 +1,38 @@
+.footer {
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1280px;
+    min-width: 950px;
+    margin: 0 auto;
+    padding-top: 2.2rem;
+    padding-left: 3.85rem;
+    padding-right: 7.6rem;
+    padding-bottom: 3.2rem;
+  }
+  .footer__left {
+    margin-right: 2rem;
+  }
+  .footer__links {
+    padding-left: 0.4rem;
+  }
+  .footer__contacts {
+    margin-top: 2.2rem;
+  }
+  .footer__contacts-phone {
+    color: #424242;
+    @include font_vida_33(24px);
+  }
+  .footer__contacts-address {
+    color: #424242;
+    font-size: rem(14px);
+    margin-top: 0.6rem;
+  }
+  .footer__contacts-mail {
+    color: $color_violet;
+    font-size: rem(14px);
+  }
+  .footer__right {
+    padding-top: 0.3rem;
+  }
+}
