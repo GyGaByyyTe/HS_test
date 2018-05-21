@@ -1,0 +1,14 @@
+mixin header
+    header.header
+        .container.header__container
+            .header__left
+                img.logo(src="./assets/images/logo.png")
+            .header__center
+                include ../common/menu.pug
+                +menu            
+            .header__right
+                .header__phone +7 000 000-00-00
+                img.header__button(src="./assets/images/phone_full.png")
+                .hamburger                
+                    a(class='hamburger__link') Меню
+                        .hamburger__line                    

@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'vida_31';
+    src: url('../fonts/vida31pro-webfont.woff2') format('woff2'),
+         url('../fonts/vida31pro-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'vida_33';
+    src: url('../fonts/vida33pro-webfont.woff2') format('woff2'),
+         url('../fonts/vida33pro-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@mixin font-vida_31($size) {
+  font-family: 'vida_31', sans-serif;
+  font-size: rem($size);
+}
+@mixin font-vida_33($size) {
+  font-family: 'vida_33', sans-serif;
+  font-size: rem($size);
+}
+
+

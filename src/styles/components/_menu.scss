@@ -1,0 +1,89 @@
+$border_gray: 1px solid #d7d7d7;
+
+.menu {
+  @include flex-prop;
+
+  .menu__list {
+    padding-top: 0.3rem;    
+    display: flex;
+    flex: 1; 
+
+    @include tablets {
+      position: absolute;
+      top: -100%;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background-color: #54add8;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      order: 1;
+      transition: top 0.7s ease-in-out;
+      &.active {
+        top: 0;
+      }
+    }
+  }
+
+  .menu__item {
+    position: relative;
+    padding: 0.3rem 0.6rem;
+    display: flex;
+    align-items: center;
+    color: $color_violet;
+    font-size: rem(14px);
+
+    &--right {
+      margin-left: auto;
+    }
+    &--comparsion {
+      margin-right: 0.76rem;
+      position: relative;
+      padding-left: 1.5rem;
+      &:before {
+        position: absolute;
+        left: 0;
+        content: ' ';
+        width: 18px;
+        height: 13px;
+        background-image: url("../images/comparsion.png");
+      }
+    }
+    &--cabinet {
+      position: relative;
+      color: #53565a;
+      font-size: 14px;      
+      border-radius: 14px;
+      border: 1px solid rgba(#53565a,0.2);
+      padding-right: 1.8rem;
+      &::after {
+        content: ' ';
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(-100%, -15%);
+        border-style: solid;
+        border-width: 5px;
+        border-color: #808080 transparent transparent transparent;        
+      }
+    }
+  }
+  .menu__item-notification {
+    position: absolute;
+    left: 0;
+    transform: translate(45%,-60%);    
+    width: 1rem;
+    height: 1rem;
+    background-color: $color_violet;
+    border-radius: 50%;
+    color: $color_white;
+    font-size: rem(11px);
+    text-align: center;
+    line-height: 1rem;
+  }
+
+  .menu__link {
+    display: inline-block;
+  }
+}

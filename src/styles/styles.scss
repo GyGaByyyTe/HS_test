@@ -1,0 +1,23 @@
+@import 'normalize.css/normalize';
+// Импортируем все переменные, миксины и т.д.
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "icons/sass-inline-svg";
+
+// Импортируем базовые стили
+@import "base/fonts";
+@import "base/base";
+
+//Ипортируем Cтили для отдельных элементов страницы
+//@import "layout/header";
+
+//Ипортируем Стили отдельных компонентов
+@import "components/header";
+@import "components/menu";
+@import "components/hamburger";
+
+//Ипортируем Персональные стили для страниц
+// @import 'pages/home';
+
+//Ипортируем Персональные стили для тем
+// @import 'themes/default';

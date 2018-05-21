@@ -1,0 +1,32 @@
+.header {
+  .header__container {
+    max-width: 1358px;
+    padding: 1rem 0;
+    @include flex-prop;
+    justify-content: space-between;
+  }
+
+  .header__left {
+    flex-shrink: 0;
+    width: 146px;
+    height: 41px;
+  }
+  .header__center {
+    padding: 0 1.6rem;
+    flex: 1;
+  }
+  .header__right {
+    padding-right: 0.6rem;
+    flex-shrink: 0;
+    @include flex-prop;
+  }
+  .header__phone {
+    color: #565f66;
+    margin-right: 0.5rem;
+    @include font_vida_33(18px);
+  }
+  .header__button {
+    width: 58px;
+    height: 58px;
+  }
+}

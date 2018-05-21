@@ -1,0 +1,15 @@
+extends ../template
+
+block variables
+    - var title = 'Company'
+
+block content
+
+    .wrapper
+        include ../common/header.pug
+        +header 
+        include ../common/content.pug
+        +content 
+        include ../common/footer.pug
+        +footer 
+
