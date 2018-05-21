@@ -1,5 +1,7 @@
 .content {
   position: relative;
+
+  overflow: hidden;
   .content__picture {
     text-align: center;
     @include tablets {
@@ -35,6 +37,9 @@
 
       @include tablets {
         font-size: rem(32px);
+      }
+      @include phones {
+        font-size: rem(26px);
       }
     }
   }

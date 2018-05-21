@@ -30,6 +30,9 @@
     @include tablets {
       margin-right: 2rem;
     }
+    @include phones {
+      margin-right: 1.2rem;
+    }
   }
   .header__phone {
     color: #565f66;

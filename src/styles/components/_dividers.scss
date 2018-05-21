@@ -3,6 +3,9 @@
   @include tablets {
     flex-wrap: wrap;
   }
+  @include phones {
+    flex-direction: column;
+  }
   .dividers__item {
     @include font_vida_33(14px);
     margin-left: 6rem;
@@ -11,9 +14,38 @@
     }
 
     @include tablets {
-      width: 42%;
+      width: 50%;
       padding-bottom: 2rem;
       margin: 0;
+    }
+    @include phones {
+      padding-bottom: 0;
+      margin-top: 1rem;
+      position: relative;
+      width: 100%;
+      &:first-child{
+        margin-top: 0;
+      }
+      &:after {
+        position: absolute;
+        content: ' ';
+        top: 0;
+        right: 0;
+        width: 16px;
+        height: 8px;
+        background-image: inline_svg('i_arrow_down', black);
+        transform: translate(-50%, 50%);
+      }
+      &:before {
+        position: absolute;
+        content: ' ';
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background-color: #53565a;
+        opacity: 0.2;
+      }
     }
   }
 }

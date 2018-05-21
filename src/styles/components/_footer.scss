@@ -11,6 +11,12 @@
     padding-bottom: 3.2rem;
     @include tablets {
       padding-left: 2rem;
+      padding-right: 1rem;      
+      min-width: initial;      
+    }
+    @include phones {
+      flex-direction: column;
+      min-width: initial;
     }
   }
   .footer__left {
@@ -57,6 +63,10 @@
     @include tablets {
       flex: 1;
       padding-left: 5rem;
+    }
+    @include phones {
+      padding-left: 0.5rem;
+      padding-top: 2.2rem;
     }
   }
 }

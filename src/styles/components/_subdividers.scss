@@ -1,5 +1,9 @@
 .subdividers {
   padding-top: 1rem;
+  @include phones {
+    height: 0;
+    overflow: hidden;
+  }
 }
 .subdividers__item {
   color: $color_violet;
