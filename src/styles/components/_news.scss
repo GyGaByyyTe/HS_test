@@ -7,6 +7,10 @@
   max-width: 1280px;
   min-width: 950px;
 
+  @include tablets {
+    min-width: 1280px;
+  }
+
   .news__item {
     padding-right: 3rem;
     margin-right: 1.6rem;

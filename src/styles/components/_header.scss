@@ -4,6 +4,11 @@
     padding: 1rem 0;
     @include flex-prop;
     justify-content: space-between;
+
+    @include tablets {
+      padding-left: 2.5rem;
+      padding-right: 0.9rem;
+    }
   }
 
   .header__left {
@@ -22,6 +27,9 @@
   }
   .header__call {
     display: inline-block;
+    @include tablets {
+      margin-right: 2rem;
+    }
   }
   .header__phone {
     color: #565f66;

@@ -1,4 +1,9 @@
 .notifications {
+
+  @include tablets {
+    width: 97%;
+  }
+  
   .notifications__item {
     padding: 1.5rem 2rem 0.85rem 1.5rem;
     margin-bottom: 1.5rem;
@@ -6,8 +11,17 @@
     border: 1px solid #edeeee;
     background-color: #ffffff;
 
+    @include tablets {
+      padding: 1.5rem 2rem 1.1rem 1.5rem;
+      margin-bottom: 2rem;
+    }
+
     &:first-child {
       padding-bottom: 2.4rem; //только для перфект пикселя. В макете нецелесообразно большой отступ тут.
+      @include tablets {
+        padding: 1.5rem 2rem 1.1rem 1.5rem;
+        margin-bottom: 2rem;
+      }
     }
     &:last-child {
       margin-bottom: 0;
@@ -16,6 +30,10 @@
     &--active {
       background-color: #fcfcfc;
       padding-bottom: 1.7rem;
+      @include tablets {
+        padding: 1.5rem 2rem 1.1rem 1.5rem;
+        margin-bottom: 2rem;
+      }
       .notifications__item-desc {
         height: 100%;
       }
@@ -30,6 +48,9 @@
   .notifications__item-header {
     @include font_vida_33(18px);
     margin-top: 1.36rem;
+    @include tablets {
+      width: 90%;
+    }
   }
   .notifications__item-desc {
     height: 0;

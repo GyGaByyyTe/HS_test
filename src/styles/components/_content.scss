@@ -2,6 +2,10 @@
   position: relative;
   .content__picture {
     text-align: center;
+    @include tablets {
+      width: 1440px;
+      transform: translateX(-29%);
+    }
   }
   .content__img {
     position: relative;
@@ -13,6 +17,11 @@
     transform: translateY(-100%);
     font-size: 0;
     color: #414141;
+
+    @include tablets {
+      padding-left: 3rem;
+    }
+
     .content__top-address {
       color: #777b80;
       @include font_vida_33(18px);
@@ -23,6 +32,10 @@
       @include font_vida_33(48px);
       background-color: $color_white;
       padding: 0.3rem 1.1rem;
+
+      @include tablets {
+        font-size: rem(32px);
+      }
     }
   }
 
@@ -30,6 +43,11 @@
     display: flex;
     padding-top: 3.3rem;
     padding-left: 2.3rem;
+
+    @include tablets {
+      padding-left: 0;
+      flex-direction: column;
+    }
   }
   .content__side {
     padding-top: 1rem;
@@ -40,6 +58,9 @@
     flex: 2.65;
     padding-left: 2.5rem;
     padding-bottom: 4rem;
+    @include tablets {
+      padding-top: 2.7rem;
+    }
     &:before {
       content: ' ';
       height: 100%;
@@ -51,5 +72,10 @@
   .content__bot {
     margin-top: 5rem;
     background-color: #eee;
+
+    @include tablets {
+      overflow: hidden;
+      margin-top: 0.1rem;
+    }
   }
 }

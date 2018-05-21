@@ -79,6 +79,11 @@ a {
   .wrapper__inner {
     flex: 1 0 auto;
   }
+
+  @include tablets {
+    min-width: inherit;
+    // max-height: 900;
+  }
 }
 
 .container {
@@ -87,4 +92,5 @@ a {
   height: 100%;
   margin: 0 auto;
   position: relative;
+  
 }

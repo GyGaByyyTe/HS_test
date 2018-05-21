@@ -1,5 +1,11 @@
+.subdividers {
+  padding-top: 1rem;
+}
 .subdividers__item {
-    color: $color_violet;
-    @include font_vida_31(14px);
-    margin-top: 1rem;
+  color: $color_violet;
+  @include font_vida_31(14px);
+  margin-bottom: 1rem;
+  @include tablets {
+    margin-bottom: 0.5rem;
+  }
 }

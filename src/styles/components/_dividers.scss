@@ -1,10 +1,19 @@
 .dividers {
   display: flex;
+  @include tablets {
+    flex-wrap: wrap;
+  }
   .dividers__item {
     @include font_vida_33(14px);
     margin-left: 6rem;
     &:first-child {
       margin-left: 0;
+    }
+
+    @include tablets {
+      width: 42%;
+      padding-bottom: 2rem;
+      margin: 0;
     }
   }
 }

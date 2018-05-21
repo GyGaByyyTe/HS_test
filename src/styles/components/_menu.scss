@@ -10,14 +10,15 @@ $border_gray: 1px solid #d7d7d7;
 
     @include tablets {
       position: absolute;
-      top: -100%;
-      left: 0;
-      right: 0;
+      top: 0;
+      left: -100vw;
+      width: 100vw;
+      height: 100vh;
       z-index: 100;
-      background-color: #54add8;
+      background-color: white;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
       order: 1;
       transition: top 0.7s ease-in-out;
       &.active {

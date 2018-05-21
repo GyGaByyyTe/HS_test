@@ -9,15 +9,26 @@
     padding-left: 3.85rem;
     padding-right: 7.6rem;
     padding-bottom: 3.2rem;
+    @include tablets {
+      padding-left: 2rem;
+    }
   }
   .footer__left {
     margin-right: 2rem;
+    @include tablets {
+      padding-top: 0.5rem;
+      margin-right: 3.4rem;
+    }
   }
   .footer__links {
     padding-left: 0.4rem;
   }
   .footer__contacts {
     margin-top: 2.2rem;
+    @include tablets {
+      margin-top: 1.5rem;
+      padding-left: 0.5rem;
+    }
   }
   .footer__contacts-phone {
     color: #424242;
@@ -27,12 +38,25 @@
     color: #424242;
     font-size: rem(14px);
     margin-top: 0.6rem;
+    @include tablets {
+      margin-top: 1rem;
+    }
   }
   .footer__contacts-mail {
+    display: inline-block;
     color: $color_violet;
     font-size: rem(14px);
+    @include tablets {
+      margin-top: 1.2rem;
+      font-size: 16px;
+    }
   }
   .footer__right {
     padding-top: 0.3rem;
+
+    @include tablets {
+      flex: 1;
+      padding-left: 5rem;
+    }
   }
 }

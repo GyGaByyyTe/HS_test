@@ -1,4 +1,14 @@
 .sidebar {
+  .sidebar__info {
+    @include tablets {
+      display: none;
+    }
+  }
+  .sidebar__locations {
+    @include tablets {
+      display: flex;
+    }
+  }
   .sidebar__info-item {
     color: $color_violet;
     @include font_vida_31(16px);
@@ -36,12 +46,32 @@
   .sidebar__locations-item {
     padding: 2.5rem 1.5rem 2.5rem 0;
     position: relative;
+
+    @include tablets {
+      flex: 1;
+      padding-left: 3rem;
+    }
+
+    &:first-child:before {
+      @include tablets {
+        display: none;
+      }
+    }
     &:before {
       position: absolute;
       content: ' ';
       top: 0;
       width: 90%;
       border-top: 1px solid rgba(#919191, 0.13);
+
+      @include tablets {
+        border-top: none;
+        left: 0;
+        top: 20%;
+        width: 1px;
+        height: 50%;
+        border-left: 1px solid rgba(#919191, 0.13);
+      }
     }
     .sidebar__info-item-notification {
       display: none;
