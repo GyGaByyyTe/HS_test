@@ -1,5 +1,4 @@
 .notifications {
-
   @include tablets {
     width: 97%;
   }
@@ -10,6 +9,16 @@
     border-radius: 8px;
     border: 1px solid #edeeee;
     background-color: #ffffff;
+    position: relative;
+    &:after {
+      position: absolute;
+      content: ' ';
+      top: 3rem;
+      right: 1.9rem;
+      width: 24px;
+      height: 24px;
+      background-image: url('../images/arrow_down.png');
+    }
 
     @include tablets {
       padding: 1.5rem 2rem 1.1rem 1.5rem;
@@ -33,6 +42,9 @@
       @include tablets {
         padding: 1.5rem 2rem 1.1rem 1.5rem;
         margin-bottom: 2rem;
+      }
+      &:after {
+        background-image: url('../images/arrow_up.png');
       }
       .notifications__item-desc {
         height: 100%;
@@ -61,6 +73,6 @@
     width: 91%;
     @include phones {
       width: 88%;
-    }    
+    }
   }
 }

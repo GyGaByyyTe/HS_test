@@ -57,6 +57,9 @@
   .content__side {
     padding-top: 1rem;
     flex: 1;
+    @include tablets {
+      padding-top: 0.4rem;
+    }
   }
   .content__main {
     position: relative;
@@ -64,7 +67,7 @@
     padding-left: 2.5rem;
     padding-bottom: 4rem;
     @include tablets {
-      padding-top: 2.7rem;
+      padding-top: 2.3rem;
     }
     &:before {
       content: ' ';

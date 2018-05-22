@@ -72,6 +72,9 @@
       content: ' ';
       background-color: rgba($color: $color_violet, $alpha: 0.9);
       transform: rotate(-45deg);
+      @include phones {
+        bottom: -23%;
+      }
     }
   }
 }
